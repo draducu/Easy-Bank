@@ -6,16 +6,32 @@
         img {
             width: 8.8125rem;
             height: 1.375rem;
+            margin-top: 0.4rem;
         }
     }
     &__menu { //mobile menu
         > span {
             display: block;
-            width: 26px;
+            width: 25px;
             height: 2px;     
             background-color: $darkBlue;
+
             &:not(:last-child) {
-                margin-bottom: 3px;
+                margin-bottom: 5px;
+            }
+        }
+        &.open {
+            > span:first-child {
+                transform-origin: 1px 2px;
+                transform: rotate(45deg);
+                
+            }
+            > span:nth-child(2) {
+                opacity:0;
+            }
+            > span:last-child {
+                transform-origin: 5px 1px;
+                transform: rotate(-45deg);
             }
         }
     }
@@ -40,7 +56,7 @@
                 left: 0;
                 right: 0;
                 bottom: -30px;
-                transition: opacity 200ms ease-in-out 350ms;
+                transition: opacity 200ms ease-in-out 300ms;
             }
             &:hover {
                 color: $darkBlue;
@@ -53,5 +69,12 @@
     &__cta {
         font-size: $font-sm;
         color: $white;
+        transition: opacity 400ms ease-in-out;
+        &:hover {
+            opacity: 0.7;
+        }
     }
+}
+p {
+    color: rgb(255, 238, 0);
 }

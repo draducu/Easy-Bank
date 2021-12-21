@@ -76,17 +76,36 @@ button, .button {
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
+  margin-top: 0.4rem;
 }
 
 .header__menu > span {
   display: block;
-  width: 26px;
+  width: 25px;
   height: 2px;
   background-color: #2d314d;
 }
 
 .header__menu > span:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.header__menu.open > span:first-child {
+  -webkit-transform-origin: 1px 2px;
+          transform-origin: 1px 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu.open > span:last-child {
+  -webkit-transform-origin: 5px 1px;
+          transform-origin: 5px 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__links a {
@@ -112,8 +131,8 @@ button, .button {
   left: 0;
   right: 0;
   bottom: -30px;
-  -webkit-transition: opacity 200ms ease-in-out 350ms;
-  transition: opacity 200ms ease-in-out 350ms;
+  -webkit-transition: opacity 200ms ease-in-out 300ms;
+  transition: opacity 200ms ease-in-out 300ms;
 }
 
 .header__links a:hover {
@@ -127,5 +146,15 @@ button, .button {
 .header__cta {
   font-size: 0.875rem;
   color: white;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.7;
+}
+
+p {
+  color: #ffee00;
 }
 /*# sourceMappingURL=style.css.map */
