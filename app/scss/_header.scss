@@ -24,7 +24,6 @@
             > span:first-child {
                 transform-origin: 1px 2px;
                 transform: rotate(45deg);
-                
             }
             > span:nth-child(2) {
                 opacity:0;
@@ -36,7 +35,6 @@
         }
     }
     &__links {
-        // border: 1px solid red;
         a { 
             position: relative;
             font-size: $font-sm;
