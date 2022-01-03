@@ -15,13 +15,15 @@
     .overlay {
         opacity: 0;
         position: fixed;
-        top: 3.75rem;
+        top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         background-image: linear-gradient($darkBlue, transparent);
     }
     nav {
+        position: relative;
+        background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom: 1.0625rem;
     }
@@ -49,9 +51,9 @@
     &__menu { 
         position: absolute;
         width: calc(100% - 3rem);
-        // top: 87.5px;
-        // left: 50%;
-        // transform: translateX(-50%);
+            // top: 87.5px;
+            // left: 50%;
+            // transform: translateX(-50%);
         background-color: $white;
         margin: 0 1.5rem;
         margin-top: 20px;
@@ -74,12 +76,12 @@
                 margin-right: 2rem;
             }
             &::before {
+                opacity: 0;
                 position: absolute;
                 content: "";
-                display: block;
+                // display: block;
                 height: 5px;
                 background: linear-gradient(to right, $limeGreen, $brightCyan);
-                opacity: 0;
                 left: 0;
                 right: 0;
                 bottom: -30px;
@@ -93,7 +95,7 @@
             }
         }
     }
-    &__cta {
+    &__cta { //buton
         font-size: $font-sm;
         color: $white;
         transition: opacity 400ms ease-in-out;
