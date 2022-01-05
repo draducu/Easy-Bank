@@ -23,6 +23,10 @@ body.noscroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
@@ -193,10 +197,6 @@ button, .button {
   opacity: 0.7;
 }
 
-p {
-  color: #ffee00;
-}
-
 .has-fade {
   visibility: hidden;
 }
@@ -265,5 +265,42 @@ p {
 .fade-out {
   -webkit-animation: fade-out 400ms ease-in-out forwards;
           animation: fade-out 400ms ease-in-out forwards;
+}
+
+.hero__image {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+.hero__image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("/images/image-mockups.png");
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.15;
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text P {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */
