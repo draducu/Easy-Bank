@@ -95,12 +95,4 @@
             }
         }
     }
-    &__cta { //buton
-        font-size: $font-sm;
-        color: $white;
-        transition: opacity 400ms ease-in-out;
-        &:hover {
-            opacity: 0.7;
-        }
-    }
 }

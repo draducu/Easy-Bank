@@ -1,0 +1,19 @@
+.feature {
+    &__grid {
+        @media (min-width: $large) {
+            display: flex;
+        }
+    }
+    &__item {
+
+    }
+    &__icon {
+
+    }
+    &__title {
+
+    }
+    &__description {
+    
+    }
+}
