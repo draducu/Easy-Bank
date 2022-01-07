@@ -37,6 +37,7 @@
                 width: 150%;
                 background-size: 122%;
                 background-position: 0% 83%;
+                // overflow-x: hidden ;
             }
         }
         &::after {
@@ -57,10 +58,13 @@
                 background-size: 94%;
                 background-position: center 150%;
                 left: 22%;
+                // overflow-x: hidden ;
             }
         }
         &::before, &::after {
             // border: 1px solid magenta;
+            // overflow-x: hidden;
+            
         } 
     }
     &__text {

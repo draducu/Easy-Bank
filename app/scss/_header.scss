@@ -20,6 +20,7 @@
         bottom: 0;
         left: 0;
         background-image: linear-gradient($darkBlue, transparent);
+        // z-index: 1;
     }
     nav {
         position: relative;
@@ -49,6 +50,7 @@
         }
     }
     &__menu { 
+        z-index: 1;  // @@@@@@@@@@@@@@@@@@@@@@@@@pus ultima data
         position: absolute;
         width: calc(100% - 3rem);
             // top: 87.5px;
