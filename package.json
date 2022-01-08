@@ -1,0 +1,27 @@
+{
+    "name": "gigel-package",
+    "version": "1.0.0",
+    "description": "![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch-sass": "sass --watch ./app/scss/style.scss ./dist/css/style.css",
+      "server": "http-server -c10 --port 3005 -o / ./",
+      "start": "concurrently \"npm run server\" \"npm run watch-sass\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/draducu/Easy-Bank.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/draducu/Easy-Bank/issues"
+    },
+    "homepage": "https://github.com/draducu/Easy-Bank#readme",
+    "devDependencies": {
+      "concurrently": "^7.0.0",
+      "sass": "^1.46.0",
+      "http-server":"14.0.0"
+    }
+  }
