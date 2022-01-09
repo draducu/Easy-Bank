@@ -374,7 +374,7 @@ button:hover,
 }
 
 .hero {
-  background-color: #ffa3a3;
+  background-color: #fafafa;
 }
 
 @media (min-width: 1200px) {
@@ -479,7 +479,7 @@ button:hover,
 }
 
 .feature {
-  background-color: #ffa3a3;
+  background-color: #fafafa;
   text-align: center;
 }
 
@@ -562,7 +562,7 @@ button:hover,
 }
 
 .articles {
-  background-color: #ffa3a3;
+  background-color: #fafafa;
 }
 
 .article__grid {
